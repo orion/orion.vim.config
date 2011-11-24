@@ -20,6 +20,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+map <Leader>n :NERDTreeToggle<CR>
 
 " Supertab configuration
 au FileType python set omnifunc=pythoncomplete#Complete
