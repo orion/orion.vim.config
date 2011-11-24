@@ -1,4 +1,15 @@
 
+Prerequisites
+=============
+
+You will need the following things installed proceedng:
+
+1. Ruby (strange, I know)
+
+2. Rake
+
+3. MacVim (if you are on the Mac)
+
 Installation
 ============
 
@@ -18,6 +29,9 @@ Installation
 4. Install the bundles using vundler: 
 
 				vim
-				:BundleInstall
+				:BundleInstall!
 
+5. Compile the Command-T plugin
 
+				cd ~/.vim/bundle/Command-T
+				rake make
