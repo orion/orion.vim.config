@@ -35,3 +35,10 @@ Installation
 
 				cd ~/.vim/bundle/Command-T
 				rake make
+
+Issues
+======
+
+1.  Despite the updated python syntax package, python highlighting still seems pretty poor.  Strings, for instance, are not highlighted.  How can I confirm that it's even working?
+
+2.  Is UltiSnips breaking SuperTab?  Need to test SuperTab with other types of completion tasks.

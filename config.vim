@@ -1,5 +1,4 @@
 
-filetype on   " purportedly this is necessary for MacVim for some reason
 filetype off 
 source ~/.vim/packages.vim  " Package management courtesy of Vundler
 filetype plugin indent on
@@ -7,7 +6,7 @@ filetype plugin indent on
 " Core configuration
 set hidden
 let mapleader = ","
-syntax on
+syntax enable 
 
 au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=8
 au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
@@ -25,3 +24,6 @@ map <Leader>n :NERDTreeToggle<CR>
 " Supertab configuration
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
+
+" UltiSnips configuration
+set runtimepath+=~/.vim/bundle/UltiSnips
