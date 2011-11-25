@@ -17,8 +17,12 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
 
+" Tab completion more like bash
+set wildmode=longest:full
+set wildmenu
+
 " NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '\.swp$']
 map <Leader>n :NERDTreeToggle<CR>
 
 " Supertab configuration
@@ -27,3 +31,5 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " UltiSnips configuration
 set runtimepath+=~/.vim/bundle/UltiSnips
+
+source ~/.vim/commands.vim
