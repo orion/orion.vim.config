@@ -31,5 +31,8 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " UltiSnips configuration
 set runtimepath+=~/.vim/bundle/UltiSnips
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<tab>'
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
 source ~/.vim/commands.vim
