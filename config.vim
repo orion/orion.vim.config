@@ -35,4 +35,9 @@ let g:UltiSnipsExpandTrigger='<tab>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'
 let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
+" Ctrlp configuration
+let g:ctrlp_map = '<Leader>ff'
+map <Leader>fb :CtrlPBuffer<CR>
+map <Leader>fm :CtrlPMRU<CR>
+
 source ~/.vim/commands.vim
