@@ -20,6 +20,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
 " Tab completion more like bash
 set wildmode=longest:full
 set wildmenu
+set wildignore+=*.pyc
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '\.swp$']
