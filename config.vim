@@ -12,7 +12,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set tabstop=8
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set shiftwidth=4
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set expandtab
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set smarttab
-au BufRead,BufNewFile *.tmpl,*.html set filetype=djangohtml
+au BufRead,BufNewFile *.tmpl,*.html set filetype=django
 
 highlight BadWhitespace ctermbg=red guibg=red
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css match BadWhitespace /^\t\+/
