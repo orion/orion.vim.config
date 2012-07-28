@@ -15,6 +15,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'edsono/vim-matchit'
 Bundle 'vim-scripts/python_match.vim'
 Bundle "pangloss/vim-javascript"
+Bundle 'vim-scripts/AutoTag'
 
 " My install of Conque-Shell seemed broken
 " Bundle 'vim-scripts/Conque-Shell'

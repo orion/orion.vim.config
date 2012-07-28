@@ -7,17 +7,21 @@ filetype plugin indent on
 set hidden
 let mapleader = ","
 syntax enable 
+set background=dark
+colorscheme solarized
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set tabstop=8
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set shiftwidth=4
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set expandtab
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set smarttab
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json set tabstop=8
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json set shiftwidth=4
+" (The Ruby kids like 2-space indent)
+au BufRead,BufNewFile *.rb set shiftwidth=4
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json set expandtab
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json set smarttab
 au BufRead,BufNewFile *.tmpl,*.html set filetype=django
 
 highlight BadWhitespace ctermbg=red guibg=red
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css match BadWhitespace /^\t\+/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css match BadWhitespace /\s\+$/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set textwidth=79
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json match BadWhitespace /^\t\+/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.css set textwidth=79
 
 " Tab completion more like bash
 set wildmode=longest:full
@@ -42,5 +46,9 @@ let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 let g:ctrlp_map = '<Leader>ff'
 map <Leader>fb :CtrlPBuffer<CR>
 map <Leader>fm :CtrlPMRU<CR>
+
+" Ctags/cscope config
+set tags=./tags;
+cscope add ~/.vim/cscope.out
 
 source ~/.vim/commands.vim
