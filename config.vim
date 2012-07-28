@@ -8,14 +8,16 @@ set hidden
 let mapleader = ","
 syntax enable 
 
-au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=8
-au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
-au BufRead,BufNewFile *.py,*.pyw set expandtab
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set tabstop=8
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set shiftwidth=4
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set expandtab
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set smarttab
+au BufRead,BufNewFile *.tmpl,*.html set filetype=djangohtml
 
 highlight BadWhitespace ctermbg=red guibg=red
-au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css match BadWhitespace /^\t\+/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.css set textwidth=79
 
 " Tab completion more like bash
 set wildmode=longest:full
