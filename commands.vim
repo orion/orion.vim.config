@@ -13,3 +13,9 @@ noremap <F1> <Esc>
 set hidden
 	map <SwipeLeft> :bprev<CR>
 	map <SwipeRight> :bnext<CR>
+
+" Command option for buffer switch since we don't use tabs
+if has("gui_macvim")
+    nnoremap <D-M-Left> :bp!<CR> 
+    nnoremap <D-M-Right> :bn!<CR>
+endif

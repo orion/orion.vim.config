@@ -14,6 +14,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
 Bundle 'edsono/vim-matchit'
 Bundle 'vim-scripts/python_match.vim'
+Bundle "pangloss/vim-javascript"
 
 " My install of Conque-Shell seemed broken
 " Bundle 'vim-scripts/Conque-Shell'
