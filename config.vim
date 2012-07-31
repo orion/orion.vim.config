@@ -7,21 +7,19 @@ filetype plugin indent on
 set hidden
 let mapleader = ","
 syntax enable 
-set background=dark
-colorscheme solarized
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json set tabstop=8
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb set tabstop=8
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json set shiftwidth=4
 " (The Ruby kids like 2-space indent)
-au BufRead,BufNewFile *.rb set shiftwidth=4
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json set expandtab
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json set smarttab
+au BufRead,BufNewFile *.rb set shiftwidth=2
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb set expandtab
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb set smarttab
 au BufRead,BufNewFile *.tmpl,*.html set filetype=django
 
 highlight BadWhitespace ctermbg=red guibg=red
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json match BadWhitespace /^\t\+/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json match BadWhitespace /\s\+$/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.css set textwidth=79
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb match BadWhitespace /^\t\+/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.css,*.rb set textwidth=79
 
 " Tab completion more like bash
 set wildmode=longest:full
