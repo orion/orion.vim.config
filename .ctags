@@ -1,0 +1,4 @@
+--python-kinds=-i
+--exclude=*.min.js
+--exclude=swift-deb-builder
+--exclude=superfish.js
