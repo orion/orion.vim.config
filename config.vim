@@ -17,9 +17,10 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb se
 au BufRead,BufNewFile *.tmpl,*.html set filetype=django
 
 highlight BadWhitespace ctermbg=red guibg=red
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb match BadWhitespace /^\t\+/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb match BadWhitespace /\s\+$/
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.css,*.rb set textwidth=79
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb,*.rst match BadWhitespace /^\t\+/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.tmpl,*.html,*.css,*.json,*.rb,*.rst match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.css,*.rb,*.rst set textwidth=79
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.js,*.css,*.rb,*.rst set wrap
 
 " Tab completion more like bash
 set wildmode=longest:full
