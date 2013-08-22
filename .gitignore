@@ -1,3 +1,5 @@
 bundle
 *.swp
 .netrwhist
+/cscope.out
+/tags
